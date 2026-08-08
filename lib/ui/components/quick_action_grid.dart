@@ -39,7 +39,7 @@ class QuickActionGrid extends StatelessWidget {
         const SizedBox(height: DesignTokens.spaceSmall),
         GridView.builder(
           shrinkWrap: true,
-          physics: const NeverScrollablePhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.symmetric(horizontal: DesignTokens.spaceMedium),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,

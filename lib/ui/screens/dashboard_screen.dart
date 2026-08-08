@@ -99,7 +99,7 @@ class DashboardScreen extends ConsumerWidget {
             ),
             ListView.builder(
               shrinkWrap: true,
-              physics: const NeverScrollablePhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(horizontal: DesignTokens.spaceMedium),
               itemCount: transactions.length > 5 ? 5 : transactions.length,
               itemBuilder: (context, index) {

@@ -3,6 +3,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_colors.dart';
 import 'core/theme/app_theme.dart';
+import 'domain/models/debt_models.dart';
+import 'domain/models/domain_models.dart';
 import 'ui/components/debt_operation_flow.dart';
 import 'ui/components/deposit_bottom_sheet.dart';
 import 'ui/components/quick_action_bottom_sheets.dart';

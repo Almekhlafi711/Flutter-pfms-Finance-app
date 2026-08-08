@@ -17,12 +17,12 @@ class PdfReportGenerator {
         pageFormat: PdfPageFormat.a4,
         build: (pw.Context context) {
           return pw.Column(
-            cross: pw.CrossAxisAlignment.start,
+            crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
               pw.Header(
                 level: 0,
                 child: pw.Row(
-                  main: pw.MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                   children: [
                     pw.Text(
                       isArabic ? "كشف حساب مالـي" : "Financial Account Statement",
@@ -39,7 +39,7 @@ class PdfReportGenerator {
               pw.Text("${isArabic ? "نوع الحساب" : "Account Type"}: ${account.type.name}"),
               pw.Text("${isArabic ? "الرصيد الحالي" : "Current Balance"}: ${CurrencyFormatter.format(account.balance, account.currency)}"),
               pw.SizedBox(height: 20),
-              pw.Table.fromTextArray(
+              pw.TableHelper.fromTextArray(
                 headers: isArabic ? ["التاريخ", "النوع", "المبلغ", "التصنيف", "ملاحظات"] : ["Date", "Type", "Amount", "Category", "Note"],
                 data: transactions.map((tx) {
                   final dateStr = DateTime.fromMillisecondsSinceEpoch(tx.date).toString().split(" ")[0];

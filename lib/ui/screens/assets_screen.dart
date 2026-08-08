@@ -59,7 +59,7 @@ class AssetsScreen extends ConsumerWidget {
             ),
             ListView.builder(
               shrinkWrap: true,
-              physics: const NeverScrollablePhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(horizontal: DesignTokens.spaceMedium),
               itemCount: assets.length,
               itemBuilder: (context, index) {

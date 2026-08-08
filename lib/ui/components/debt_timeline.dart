@@ -32,7 +32,7 @@ class DebtTimeline extends StatelessWidget {
 
     return ListView.builder(
       shrinkWrap: true,
-      physics: const NeverScrollablePhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: entries.length,
       itemBuilder: (context, index) {
         final entry = entries[index];

@@ -17,12 +17,12 @@ class DebtPdfReportGenerator {
         build: (pw.Context context) {
           final person = debtAccount.person;
           return pw.Column(
-            cross: pw.CrossAxisAlignment.start,
+            crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
               pw.Header(
                 level: 0,
                 child: pw.Row(
-                  main: pw.MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                   children: [
                     pw.Text(
                       isArabic ? "كشف حساب الدين والتصفية" : "Debt & Settlement Statement",
@@ -40,7 +40,7 @@ class DebtPdfReportGenerator {
               pw.Text("${isArabic ? "المبلغ الأصلي" : "Original Debt"}: ${CurrencyFormatter.format(debtAccount.totalOriginalAmount, debtAccount.currency)}"),
               pw.Text("${isArabic ? "المبلغ المتبقي" : "Remaining Debt"}: ${CurrencyFormatter.format(debtAccount.totalRemainingAmount, debtAccount.currency)}"),
               pw.SizedBox(height: 20),
-              pw.Table.fromTextArray(
+              pw.TableHelper.fromTextArray(
                 headers: isArabic ? ["التاريخ", "نوع العملية", "المبلغ", "الوسيلة", "الوصف"] : ["Date", "Type", "Amount", "Method", "Description"],
                 data: debtAccount.entries.map((entry) {
                   final dateStr = DateTime.fromMillisecondsSinceEpoch(entry.date).toString().split(" ")[0];

@@ -15,7 +15,7 @@ class AppTheme {
         secondary: AppColors.goldAccent,
         error: AppColors.redExpense,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.slateDarkCard,
         elevation: DesignTokens.cardElevation,
         shape: RoundedRectangleBorder(
@@ -49,7 +49,7 @@ class AppTheme {
         secondary: AppColors.goldAccent,
         error: AppColors.redExpense,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.lightCard,
         elevation: DesignTokens.cardElevation,
         shape: RoundedRectangleBorder(

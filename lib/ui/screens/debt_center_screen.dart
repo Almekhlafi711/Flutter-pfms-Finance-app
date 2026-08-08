@@ -72,7 +72,7 @@ class _DebtCenterScreenState extends ConsumerState<DebtCenterScreen> {
             const SizedBox(height: DesignTokens.spaceMedium),
             ListView.builder(
               shrinkWrap: true,
-              physics: const NeverScrollablePhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(horizontal: DesignTokens.spaceMedium),
               itemCount: filteredDebts.length,
               itemBuilder: (context, index) {

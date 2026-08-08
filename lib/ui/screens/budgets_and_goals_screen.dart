@@ -39,7 +39,7 @@ class BudgetsAndGoalsScreen extends ConsumerWidget {
             const SizedBox(height: DesignTokens.spaceSmall),
             ListView.builder(
               shrinkWrap: true,
-              physics: const NeverScrollablePhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: goals.length,
               itemBuilder: (context, index) {
                 final goal = goals[index];
@@ -82,7 +82,7 @@ class BudgetsAndGoalsScreen extends ConsumerWidget {
             const SizedBox(height: DesignTokens.spaceSmall),
             ListView.builder(
               shrinkWrap: true,
-              physics: const NeverScrollablePhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: budgets.length,
               itemBuilder: (context, index) {
                 final budget = budgets[index];
