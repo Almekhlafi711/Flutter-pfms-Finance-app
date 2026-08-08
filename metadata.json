@@ -1,0 +1,6 @@
+{
+  "name": "PFMS Finance",
+  "description": "Personal Finance Management System with Domain Driven Architecture, multi-account carousel, offline-first Room database, assets, liabilities, debt center, budgets, goals, and reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
