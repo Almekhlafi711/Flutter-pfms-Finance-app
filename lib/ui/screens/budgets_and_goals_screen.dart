@@ -30,7 +30,7 @@ class BudgetsAndGoalsScreen extends ConsumerWidget {
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(DesignTokens.spaceMedium),
         child: Column(
-          cross: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               isArabic ? "الأهداف الادخارية" : "Savings Goals",
@@ -49,7 +49,7 @@ class BudgetsAndGoalsScreen extends ConsumerWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(DesignTokens.spaceMedium),
                     child: Column(
-                      cross: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

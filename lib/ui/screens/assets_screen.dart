@@ -42,7 +42,7 @@ class AssetsScreen extends ConsumerWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      cross: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(isArabic ? "إجمالي قيمة الأصول" : "Total Assets Value", style: const TextStyle(color: AppColors.textSecondaryDark)),
                         const SizedBox(height: 4),

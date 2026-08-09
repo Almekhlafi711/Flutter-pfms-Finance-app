@@ -27,7 +27,7 @@ class QuickActionGrid extends StatelessWidget {
     ];
 
     return Column(
-      cross: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: DesignTokens.spaceMedium),

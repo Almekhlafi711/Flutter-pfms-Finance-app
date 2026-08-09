@@ -26,7 +26,7 @@ class FinancialOverviewCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(DesignTokens.spaceLarge),
         child: Column(
-          cross: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +50,7 @@ class FinancialOverviewCard extends StatelessWidget {
               children: [
                 Expanded(
                   child: Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(isArabic ? "النقد والحسابات" : "Cash & Accounts", style: const TextStyle(fontSize: 11, color: AppColors.textMutedDark)),
                       Text(CurrencyFormatter.formatCompact(netWorth.totalCashAndAccounts, "SAR"), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimaryDark)),
@@ -59,7 +59,7 @@ class FinancialOverviewCard extends StatelessWidget {
                 ),
                 Expanded(
                   child: Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(isArabic ? "قيمة الأصول" : "Assets Value", style: const TextStyle(fontSize: 11, color: AppColors.textMutedDark)),
                       Text(CurrencyFormatter.formatCompact(netWorth.totalAssetsValue, "SAR"), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.purpleAsset)),
@@ -73,7 +73,7 @@ class FinancialOverviewCard extends StatelessWidget {
               children: [
                 Expanded(
                   child: Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(isArabic ? "ديون لك (مستحقات)" : "Receivables", style: const TextStyle(fontSize: 11, color: AppColors.textMutedDark)),
                       Text(CurrencyFormatter.formatCompact(netWorth.totalReceivables, "SAR"), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greenIncome)),
@@ -82,7 +82,7 @@ class FinancialOverviewCard extends StatelessWidget {
                 ),
                 Expanded(
                   child: Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(isArabic ? "ديون عليك (التزامات)" : "Liabilities", style: const TextStyle(fontSize: 11, color: AppColors.textMutedDark)),
                       Text(CurrencyFormatter.formatCompact(netWorth.totalLiabilitiesAndPayables, "SAR"), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.redExpense)),
