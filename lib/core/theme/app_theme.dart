@@ -11,7 +11,6 @@ class AppTheme {
       colorScheme: const ColorScheme.dark(
         primary: AppColors.tealAccent,
         surface: AppColors.slateDarkSurface,
-        background: AppColors.slateDarkBackground,
         secondary: AppColors.goldAccent,
         error: AppColors.redExpense,
       ),
@@ -45,7 +44,6 @@ class AppTheme {
       colorScheme: const ColorScheme.light(
         primary: AppColors.tealAccent,
         surface: AppColors.lightSurface,
-        background: AppColors.lightBackground,
         secondary: AppColors.goldAccent,
         error: AppColors.redExpense,
       ),
