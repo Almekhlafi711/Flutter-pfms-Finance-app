@@ -32,7 +32,7 @@ class DebtFilterTabs extends StatelessWidget {
               label: Text(tabs[index]),
               selected: isSelected,
               onSelected: (_) => onTabSelected(index),
-              selectedColor: AppColors.tealAccent.withOpacity(0.2),
+              selectedColor: AppColors.tealAccent.withValues(alpha: 0.2),
               backgroundColor: AppColors.slateDarkCard,
               labelStyle: TextStyle(
                 color: isSelected ? AppColors.tealAccent : AppColors.textSecondaryDark,

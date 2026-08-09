@@ -40,7 +40,7 @@ class BillsAndSubscriptionsScreen extends ConsumerWidget {
             margin: const EdgeInsets.only(bottom: DesignTokens.spaceSmall),
             child: ListTile(
               leading: CircleAvatar(
-                backgroundColor: isPaid ? AppColors.greenIncome.withOpacity(0.2) : AppColors.goldAccent.withOpacity(0.2),
+                backgroundColor: isPaid ? AppColors.greenIncome.withValues(alpha: 0.2) : AppColors.goldAccent.withValues(alpha: 0.2),
                 child: Icon(Icons.receipt_long, color: isPaid ? AppColors.greenIncome : AppColors.goldAccent),
               ),
               title: Text(bill.title, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimaryDark)),

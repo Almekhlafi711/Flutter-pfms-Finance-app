@@ -64,7 +64,7 @@ class QuickActionGrid extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 18,
-                      backgroundColor: item.color.withOpacity(0.2),
+                      backgroundColor: item.color.withValues(alpha: 0.2),
                       child: Icon(item.icon, color: item.color, size: 20),
                     ),
                     const SizedBox(height: 6),

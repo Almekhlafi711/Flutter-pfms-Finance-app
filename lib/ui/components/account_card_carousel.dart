@@ -63,7 +63,7 @@ class AccountCardCarousel extends StatelessWidget {
                     margin: const EdgeInsets.only(right: DesignTokens.spaceSmall),
                     padding: const EdgeInsets.all(DesignTokens.spaceMedium),
                     decoration: BoxDecoration(
-                      color: isSelected ? AppColors.tealAccent.withOpacity(0.2) : AppColors.slateDarkCard,
+                      color: isSelected ? AppColors.tealAccent.withValues(alpha: 0.2) : AppColors.slateDarkCard,
                       borderRadius: BorderRadius.circular(DesignTokens.radiusMedium),
                       border: Border.all(
                         color: isSelected ? AppColors.tealAccent : AppColors.slateBorder,
@@ -113,7 +113,7 @@ class AccountCardCarousel extends StatelessWidget {
                   margin: const EdgeInsets.only(right: DesignTokens.spaceSmall),
                   padding: const EdgeInsets.all(DesignTokens.spaceMedium),
                   decoration: BoxDecoration(
-                    color: isSelected ? AppColors.tealAccent.withOpacity(0.2) : AppColors.slateDarkCard,
+                    color: isSelected ? AppColors.tealAccent.withValues(alpha: 0.2) : AppColors.slateDarkCard,
                     borderRadius: BorderRadius.circular(DesignTokens.radiusMedium),
                     border: Border.all(
                       color: isSelected ? AppColors.tealAccent : AppColors.slateBorder,

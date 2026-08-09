@@ -47,7 +47,7 @@ class DebtCard extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 20,
-                        backgroundColor: statusColor.withOpacity(0.2),
+                        backgroundColor: statusColor.withValues(alpha: 0.2),
                         child: Text(
                           debtAccount.person.name.isNotEmpty ? debtAccount.person.name[0].toUpperCase() : "?",
                           style: TextStyle(fontWeight: FontWeight.bold, color: statusColor),
@@ -74,7 +74,7 @@ class DebtCard extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: statusColor.withOpacity(0.15),
+                      color: statusColor.withValues(alpha: 0.15),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: Text(

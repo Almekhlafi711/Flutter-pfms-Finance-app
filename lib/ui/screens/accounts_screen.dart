@@ -39,7 +39,7 @@ class AccountsScreen extends ConsumerWidget {
             margin: const EdgeInsets.only(bottom: DesignTokens.spaceSmall),
             child: ListTile(
               leading: CircleAvatar(
-                backgroundColor: AppColors.tealAccent.withOpacity(0.2),
+                backgroundColor: AppColors.tealAccent.withValues(alpha: 0.2),
                 child: const Icon(Icons.account_balance, color: AppColors.tealAccent),
               ),
               title: Text(account.name, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimaryDark)),

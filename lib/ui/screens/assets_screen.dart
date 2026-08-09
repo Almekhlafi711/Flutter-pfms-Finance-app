@@ -69,7 +69,7 @@ class AssetsScreen extends ConsumerWidget {
                   margin: const EdgeInsets.only(bottom: DesignTokens.spaceSmall),
                   child: ListTile(
                     leading: CircleAvatar(
-                      backgroundColor: AppColors.purpleAsset.withOpacity(0.2),
+                      backgroundColor: AppColors.purpleAsset.withValues(alpha: 0.2),
                       child: const Icon(Icons.home_work, color: AppColors.purpleAsset),
                     ),
                     title: Text(asset.name, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimaryDark)),

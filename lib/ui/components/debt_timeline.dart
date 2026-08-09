@@ -47,7 +47,7 @@ class DebtTimeline extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 12,
-                  backgroundColor: color.withOpacity(0.2),
+                  backgroundColor: color.withValues(alpha: 0.2),
                   child: Icon(isPayment ? Icons.check : Icons.add, size: 14, color: color),
                 ),
                 if (index < entries.length - 1)

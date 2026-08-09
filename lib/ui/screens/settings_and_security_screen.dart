@@ -33,7 +33,7 @@ class SettingsAndSecurityScreen extends ConsumerWidget {
                   subtitle: Text(isArabic ? "العربية" : "English"),
                   trailing: Switch(
                     value: isArabic,
-                    activeColor: AppColors.tealAccent,
+                    activeThumbColor: AppColors.tealAccent,
                     onChanged: (_) => controller.toggleLanguage(),
                   ),
                 ),
@@ -44,7 +44,7 @@ class SettingsAndSecurityScreen extends ConsumerWidget {
                   subtitle: Text(isArabic ? "حماية التطبيق بالبصمة" : "Protect app with fingerprint"),
                   trailing: Switch(
                     value: security.isBiometricsEnabled,
-                    activeColor: AppColors.goldAccent,
+                    activeThumbColor: AppColors.goldAccent,
                     onChanged: (val) {
                       security.isBiometricsEnabled = val;
                       ref.read(toastMessageProvider.notifier).state = isArabic ? "تم تحديث إعدادات الأمان" : "Security settings updated";
@@ -58,7 +58,7 @@ class SettingsAndSecurityScreen extends ConsumerWidget {
                   subtitle: Text(isArabic ? "نسخ احتياطي للبيانات" : "Backup data safely"),
                   trailing: Switch(
                     value: security.isCloudBackupEnabled,
-                    activeColor: AppColors.tealAccentLight,
+                    activeThumbColor: AppColors.tealAccentLight,
                     onChanged: (val) {
                       security.isCloudBackupEnabled = val;
                       ref.read(toastMessageProvider.notifier).state = isArabic ? "تم تحديث إعدادات النسخ الاحتياطي" : "Cloud backup settings updated";

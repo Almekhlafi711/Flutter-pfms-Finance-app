@@ -112,7 +112,7 @@ class DashboardScreen extends ConsumerWidget {
                   margin: const EdgeInsets.only(bottom: DesignTokens.spaceSmall),
                   child: ListTile(
                     leading: CircleAvatar(
-                      backgroundColor: color.withOpacity(0.2),
+                      backgroundColor: color.withValues(alpha: 0.2),
                       child: Icon(
                         isIncome ? Icons.arrow_downward : Icons.arrow_upward,
                         color: color,
