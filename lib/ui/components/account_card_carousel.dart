@@ -23,7 +23,7 @@ class AccountCardCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      cross: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: DesignTokens.spaceMedium),
@@ -71,7 +71,7 @@ class AccountCardCarousel extends StatelessWidget {
                       ),
                     ),
                     child: Column(
-                      cross: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Row(
@@ -85,7 +85,7 @@ class AccountCardCarousel extends StatelessWidget {
                           ],
                         ),
                         Column(
-                          cross: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               isArabic ? "إجمالي الرصيد" : "Total Balance",
@@ -121,7 +121,7 @@ class AccountCardCarousel extends StatelessWidget {
                     ),
                   ),
                   child: Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
@@ -152,7 +152,7 @@ class AccountCardCarousel extends StatelessWidget {
                         ],
                       ),
                       Column(
-                        cross: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             account.name,
