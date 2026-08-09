@@ -41,7 +41,7 @@ class DebtTimeline extends StatelessWidget {
         final color = isPayment ? AppColors.greenIncome : AppColors.orangeDebt;
 
         return Row(
-          cross: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Column(
               children: [
@@ -72,7 +72,7 @@ class DebtTimeline extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      cross: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           entry.description.isNotEmpty ? entry.description : (isPayment ? "Payment" : "Principal"),

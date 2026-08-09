@@ -38,7 +38,7 @@ class DebtCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(DesignTokens.spaceMedium),
           child: Column(
-            cross: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -55,7 +55,7 @@ class DebtCard extends StatelessWidget {
                       ),
                       const SizedBox(width: DesignTokens.spaceSmall),
                       Column(
-                        cross: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             debtAccount.person.name,
@@ -89,14 +89,14 @@ class DebtCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(isArabic ? "المبلغ الأصلي" : "Original", style: const TextStyle(fontSize: 11, color: AppColors.textMutedDark)),
                       Text(CurrencyFormatter.format(debt.originalAmount, debt.currency), style: const TextStyle(fontWeight: FontWeight.w600, color: AppColors.textSecondaryDark)),
                     ],
                   ),
                   Column(
-                    cross: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(isArabic ? "المطبقي" : "Remaining", style: const TextStyle(fontSize: 11, color: AppColors.textMutedDark)),
                       Text(CurrencyFormatter.format(debt.remainingAmount, debt.currency), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: statusColor)),

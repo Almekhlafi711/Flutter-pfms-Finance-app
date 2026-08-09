@@ -35,7 +35,7 @@ class DebtSummaryCard extends StatelessWidget {
               children: [
                 Expanded(
                   child: Column(
-                    cross: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -57,7 +57,7 @@ class DebtSummaryCard extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(left: DesignTokens.spaceMedium),
                     child: Column(
-                      cross: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
