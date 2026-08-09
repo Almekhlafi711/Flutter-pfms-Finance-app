@@ -65,7 +65,7 @@ class DashboardScreen extends ConsumerWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          cross: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FinancialOverviewCard(netWorth: netWorth, isArabic: isArabic),
             AccountCardCarousel(
